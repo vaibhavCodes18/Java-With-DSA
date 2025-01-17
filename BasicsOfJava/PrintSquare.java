@@ -5,5 +5,6 @@ public class PrintSquare {
     for(int lines = 1; lines <= 4; lines++){
       System.out.println("****");
     }
+
   }
 }
