@@ -15,6 +15,7 @@ public class Prime {
   }
 
   public static boolean isPrimeoptimized(int n) {
+
     if (n == 2) {
       return true;
     }
@@ -26,7 +27,16 @@ public class Prime {
     return true;
   }
 
+  public static void primesRange(int n) {
+    for (int i = 2; i <= n; i++) {
+      if (isPrime(i)) {
+        System.out.println(i+" ");
+      }
+    }
+    System.out.println();
+  }
+
   public static void main(String[] args) {
-    System.out.println(isPrimeoptimized(3));
+    primesRange(16);
   }
 }
