@@ -1,19 +1,24 @@
 import java.util.Scanner;
 
 public class Factorial {
+
+  public static int factorial(int n){
+    int fact = 1;
+
+    for (int i = 1; i <= n; i++) {
+      fact *= i;
+    }
+    return fact;
+  }
+
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
-
-    int factorial = 1;
-
-    System.out.println("Enter a positive number: ");
+    System.out.println("Enter the number: ");
     int num = sc.nextInt();
 
-    for(int i = num; i >=1; i--){
-      factorial = factorial * i;
-    }
+    int fact = factorial(num);
+    System.out.println("The factorial of " + num + " is " +fact);
     
-    System.out.println(factorial);
 
   }
 }
