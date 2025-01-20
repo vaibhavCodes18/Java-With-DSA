@@ -13,7 +13,7 @@ public class DecimalToBin {
   }
 
   public static void main(String[] args) {
-    int dec = 5;
+    int dec = 3;
     int bin = decimalToBin(dec);
     System.out.println("Decimal = " + dec + ", Binary = " + bin);
   }
