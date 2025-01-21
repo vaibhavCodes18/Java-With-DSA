@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class DecimalToBin {
 
   public static int decimalToBin(int num){
@@ -13,7 +16,9 @@ public class DecimalToBin {
   }
 
   public static void main(String[] args) {
-    int dec = 3;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a decimal number : ");
+    int dec = sc.nextInt();
     int bin = decimalToBin(dec);
     System.out.println("Decimal = " + dec + ", Binary = " + bin);
   }
