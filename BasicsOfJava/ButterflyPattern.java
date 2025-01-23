@@ -5,7 +5,7 @@ public class ButterflyPattern {
       for(int j = 1; j <= i; j++){
         System.out.print("*");
       }
-// bbb
+
       for(int k = 1; k <= 2*(n-i); k++){
         System.out.print(" ");
       }
