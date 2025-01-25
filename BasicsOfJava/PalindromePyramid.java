@@ -8,11 +8,11 @@ public class PalindromePyramid {
         System.out.print(" ");
       }
       // numbers - desc
-      for(int k = i; k >= 2; k--){
+      for(int k = i; k >= 1; k--){
         System.out.print(k);
       }
       // numbers - asc
-      for(int j = 1; j <= i; j++){
+      for(int j = 2; j <= i; j++){
         System.out.print(j);
       }
       System.out.println();
