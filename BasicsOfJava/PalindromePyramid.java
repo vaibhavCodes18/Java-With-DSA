@@ -14,7 +14,7 @@ public class PalindromePyramid {
       for(int k = i; k >= 1; k--){
         System.out.print(k);
       }
-      
+
       // numbers - asc
       for(int j = 2; j <= i; j++){
         System.out.print(j);
