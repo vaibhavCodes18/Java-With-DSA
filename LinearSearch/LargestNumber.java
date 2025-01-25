@@ -9,7 +9,6 @@ public class LargestNumber {
     for(int i = 0; i < numbers.length; i++){
       if(numbers[i] > largest){
         largest = numbers[i];
-        index = i;
       }
       if(smallest > numbers[i]){
         smallest = numbers[i];
