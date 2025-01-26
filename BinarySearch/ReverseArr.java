@@ -2,6 +2,7 @@
 
 public class ReverseArr {
 
+  // while loop
   public static void reverseArr(int[] arr){
     int start = 0, end = arr.length-1;
 
@@ -14,6 +15,7 @@ public class ReverseArr {
     }
   }
 
+  // for loop
   public static void reversearray(int[] arr){
 
     int start = 0, end = arr.length-1;
