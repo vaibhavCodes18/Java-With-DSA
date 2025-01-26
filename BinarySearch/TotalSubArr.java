@@ -14,7 +14,7 @@ public class TotalSubArr {
         }
         System.out.println("Sum is " + currSum);
         if (currSum > maxSum) {
-          maxSum = currSum
+          maxSum = currSum;
         }
       }
       System.out.println();
