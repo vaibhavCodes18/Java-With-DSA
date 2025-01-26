@@ -19,7 +19,7 @@ public class TotalSubArr {
       }
       System.out.println();
     }
-    System.out.println("Maximum sum is " + maxSum);
+    System.out.println("Maximum sum is = " + maxSum);
   }
   
   public static void main(String[] args) {
