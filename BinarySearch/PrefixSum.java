@@ -14,7 +14,7 @@ public class PrefixSum {
 
     for(int i = 0; i < arr.length; i++){
       for(int j = i; j < arr.length; j++){
-        currSum = 0;
+        currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i-1];
 
         if(currSum > maxSum){
           maxSum = currSum;
