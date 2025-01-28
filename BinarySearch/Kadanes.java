@@ -10,7 +10,7 @@ public class Kadanes {
       cs = cs + arr[i];
       if( cs < 0){
         cs = 0;
-      }
+      }    
       ms = Math.max(ms, cs);
     }
     System.out.println("Max sum = " + ms);
