@@ -1,4 +1,4 @@
-package LeetCode;
+import java.lang.*;
 
 public class TarppingRainwater_42 {
 
@@ -23,7 +23,7 @@ public class TarppingRainwater_42 {
       trappedWater += wl - height[i];
     }
 
-    return  trappedWater;
+    return trappedWater;
   }
 
   public static void main(String[] args) {
