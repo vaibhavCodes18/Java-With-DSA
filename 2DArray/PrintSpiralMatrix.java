@@ -1,43 +1,43 @@
 class PrintSpiralMatrix{
 	
 	public static void printMatrix(int[][] matrix){
-		int sr = 0;
-		int er = matrix.length-1;
-		int sc = 0;
-		int ec = matrix[0].length-1;
+		int startRow = 0;
+		int startCol = 0;
+		int endRow = matrix.length-1;
+		int endCol = matrix[0].length-1;
 		
-		while(sr <= er && sc <= ec){
-			// top
-			for(int i = sc; i <= ec; i++){
-				System.out.print(matrix[sr][i]+" ");
+		while(startRow <= endRow && startCol <= endCol){
+			//top
+			for(int i = startCol; i <= endCol; i++){
+				System.out.print(matrix[startRow][i]+" ");
 			}
-			//right
-			for(int i = sr+1; i <= er; i++){
-				System.out.print(matrix[i][ec]+" ");
+			
+			for(int i = startRow+1; i <= endRow; i++){
+				System.out.print(matrix[i][endCol]+" ");
 			}
-			//bottom
-			for(int i = ec-1; i >= sc; i--){
-				System.out.print(matrix[er][i]+" ");
+			
+			for(int i = endCol-1; i >= startCol; i--){
+				System.out.print(matrix[endRow][i]+" ");
 			}
-			//left
-			for(int i = er-1; i >= sr+1; i--){
-				System.out.print(matrix[i][sc]+" ");
+			
+			for(int i = endRow-1; i >= startRow+1; i--){
+				System.out.print(matrix[i][startCol]+" ");
 			}
-			sr++;
-			er--;
-			sc++;
-			ec--;
+			
+			startRow++;
+			startCol++;
+			endRow--;
+			endCol--;
 		}
 	}
 	
 	public static void main(String[] args){
-		int[][] matrix={
+		int[][] matrix = {
 			{1,2,3,4},
 			{5,6,7,8},
 			{9,10,11,12},
 			{13,14,15,16}
 		};
-		
 		printMatrix(matrix);
 	}
 }
