@@ -18,6 +18,25 @@ class StairSearch{
 		System.out.print("Key is not found");
 		return false;
 	}
+	
+	public static boolean stairSearchTwo(int[][] matrix, int key){
+		int row = matrix.length-1, col = 0;
+		
+		while(col < matrix[0].length && row >= 0){
+			if(key == matrix[row][col]){
+				System.out.print("Key is found at (" + row + ", " + col + ")");
+				return true;
+			}
+			else if(key < matrix[row][col])
+				row--;
+			else if(key > matrix[row][col])
+				col++;
+		}
+		System.out.print("Key is not found");
+		return false;
+		
+	}
+	
 	public static void main(String[] args){
 		int[][] matrix = {
 			{10,20,30,40},
@@ -27,6 +46,6 @@ class StairSearch{
 		};
 		int key = 33;
 	
-		stairSearch(matrix, key);
+		stairSearchTwo(matrix, key);
 	}
 }
